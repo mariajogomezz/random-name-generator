@@ -78,7 +78,7 @@ h1 {
 .name {
   font-size: 2rem;
   font-weight: bold;
-  color: #4f46e5;
+  color: #ff4fa3;
   margin: 30px 0;
 }
 
@@ -94,7 +94,7 @@ button {
 }
 
 button:hover {
-  background-color: #3730a3;
+  background-color: #ff4fa3;
   transform: translateY(-2px);
 }
 

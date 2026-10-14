@@ -58,7 +58,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(135deg, #4f46e5, #06b6d4);
+  background: linear-gradient(135deg, #ff85c2, #ffb347);
 }
 
 .card {
@@ -83,7 +83,7 @@ h1 {
 }
 
 button {
-  background-color: #4f46e5;
+  background-color: #ff85c2;
   color: white;
   border: none;
   padding: 12px 24px;

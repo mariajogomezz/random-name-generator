@@ -18,8 +18,19 @@ const names = [
   "Alberto"
 ];
 
-const apellidos = [
+const apellido1 = [
   "Gomez",
+  "Sanchez",
+  "Perez",
+  "Ballesta",
+  "Martinez",
+  "Rayo",
+  "Garcia",
+  "Tarifa"
+];
+
+const apellido2 = [
+   "Gomez",
   "Sanchez",
   "Perez",
   "Ballesta",
@@ -33,8 +44,11 @@ app.get("/", (req, res) => {
   const randomName =
     names[Math.floor(Math.random() * names.length)];
 
-  const randomApellido =
-    apellidos[Math.floor(Math.random() * apellidos.length)];
+  const randomApellido1 =
+    apellido1[Math.floor(Math.random() * apellidos.length)];
+
+  const randomApellido2 = 
+      apellido2[Math.floor(Math.random() * apellidos.length)];
 
   res.send(`
 <!DOCTYPE html>
@@ -108,10 +122,10 @@ button:hover {
 
 <body>
   <div class="card">
-    <h1>🎲 Random Name Generator</h1>
+    <h1>🎲 Generador de nombres aleatorios </h1>
 
     <div class="name">
-      ${randomName} ${randomApellido}
+      ${randomName} ${randomApellido1} ${randomApellido2}
     </div>
 
     <button onclick="window.location.reload()">

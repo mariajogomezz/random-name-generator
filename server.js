@@ -250,7 +250,7 @@ app.get("/", (req, res) => {
 const edad = Math.floor(Math.random() * 48) + 18;
 const profesion =
   profesiones[Math.floor(Math.random() * profesiones.length)];
-const ciudades =
+const ciudad =
   ciudades[Math.floor(Math.random() * ciudades.length)];
   
   res.send(`
@@ -334,7 +334,7 @@ button:hover {
 <br>
 <p>💼 <strong>Profesión:</strong> ${profesion} </p>
 <br>
-<p>📍 <strong>Ciudad:</strong> ${ciudades} </p>
+<p>📍 <strong>Ciudad:</strong> ${ciudad} </p>
 <br>
 
     <button onclick="window.location.reload()">

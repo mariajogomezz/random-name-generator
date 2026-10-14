@@ -210,6 +210,34 @@ const apellido2 = [
   "Ballesta"
 ];
 
+const profesiones = [
+  "Ingeniera DevOps",
+  "Desarrollador Full Stack",
+  "Médico",
+  "Profesor",
+  "Piloto",
+  "Arquitecto",
+  "Diseñador UX",
+  "Analista de Datos",
+  "Bombero",
+  "Policía",
+  "Veterinario",
+  "Abogado"
+    ];
+
+const ciudades = [
+  "Madrid",
+  "Barcelona",
+  "Valencia",
+  "Sevilla",
+  "Bilbao",
+  "Málaga",
+  "Zaragoza",
+  "Murcia",
+  "Valladolid",
+  "A Coruña"
+];
+
 app.get("/", (req, res) => {
   const randomName =
     names[Math.floor(Math.random() * names.length)];
@@ -219,7 +247,12 @@ app.get("/", (req, res) => {
 
   const randomApellido2 = 
       apellido2[Math.floor(Math.random() * apellido2.length)];
-
+const edad = Math.floor(Math.random() * 48) + 18;
+const profesion =
+  profesiones[Math.floor(Math.random() * profesiones.length)];
+const ciudades =
+  ciudades[Math.floor(Math.random() * ciudades.length)];
+  
   res.send(`
 <!DOCTYPE html>
 <html lang="es">
@@ -292,14 +325,20 @@ button:hover {
 
 <body>
   <div class="card">
-    <h1>🎲 Generador de nombres aleatorios </h1>
+    <h1>🎲 Generador de personas ficticias </h1>
 
     <div class="name">
       ${randomName} ${randomApellido1} ${randomApellido2}
     </div>
+<p>🎂 <strong>Edad:</strong> ${edad} años</p>
+<br>
+<p>💼 <strong>Profesión:</strong> ${profesion} </p>
+<br>
+<p>📍 <strong>Ciudad:</strong> ${ciudades} </p>
+<br>
 
     <button onclick="window.location.reload()">
-      Generar otro nombre
+      Generar otra persona
     </button>
 
     <div class="footer">

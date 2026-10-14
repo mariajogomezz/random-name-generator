@@ -45,10 +45,10 @@ app.get("/", (req, res) => {
     names[Math.floor(Math.random() * names.length)];
 
   const randomApellido1 =
-    apellido1[Math.floor(Math.random() * apellidos.length)];
+    apellido1[Math.floor(Math.random() * apellido1.length)];
 
   const randomApellido2 = 
-      apellido2[Math.floor(Math.random() * apellidos.length)];
+      apellido2[Math.floor(Math.random() * apellido2.length)];
 
   res.send(`
 <!DOCTYPE html>
